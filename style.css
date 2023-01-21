@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #015958;
+    color: white;
+    height: 100vh;
+    /* comando para oucupar toda a tela */
+}
+header{
+    display: flex;
+    /* comando para manipular todos os elementos filhos desse flex container com propriedades novas. */
+    
+    align-items: center;
+    /* controla o alinhamento de todos os itens no eixo transversal. */
+
+    justify-content: space-between;
+    /* O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles; */
+    position: fixed;
+    padding: 46px;
+    width: 100%;
+    background-color: #015958;
+    
+    
+}
+h1{
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    display: flex;  
+}
+button{
+    padding: 16px 24px;
+    border-radius: 10px;
+    border: 1px solid #0FC2C0;
+    background-color: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    /* permite controlar o espaçamento entre as linhas de um texto. */
+}
+button:hover{
+    background-color: #0caba865 ;
+}
+
+#form-habits{
+    display: flex;
+    padding: 182px 48px 48px;
+    width: fit-content;
+}
+.habits{
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.habit{
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.days{
+    display: flex;
+    gap: 48px;
+    margin-left: 32px;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.day div{
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+    color: white;
+    text-align: center;
+}
+input{
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #0FC2C0;
+    border-radius: 8px;
+
+    background: #9ef8ee62 ;
+  }
+
+  input:checked{
+    background: #fa8108e1;
+    border: 2px solid #F24405;
+  }
+
+@media (max-width: 630px){
+    button div{
+      display: none;
+    }
+  }
+ 
