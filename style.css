@@ -54,7 +54,7 @@ button:hover{
 
 #form-habits{
     display: flex;
-    padding: 182px 48px 48px;
+    padding: 182px 48px 40px ;
     width: fit-content;
 }
 .habits{
